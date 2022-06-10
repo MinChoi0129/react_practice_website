@@ -1,8 +1,8 @@
-import Counter from "./Counter";
+import Say from './Say'
 import "./App.css";
 
 const App = () => {
-  return <Counter className="react" />;
+  return <Say />
 };
 
 export default App;
