@@ -1,26 +1,12 @@
 import { useState } from "react";
 
 const Say = () => {
-const abc = [
-    {id: 1, value: false},
-    {id: 2, value: true},
-    {id: 3, value: false},
-    {id: 4, value: true}
-]
+
   const [message, setMessage] = useState("");
-  const onClickEnter = () => {
-      setMessage("안녕하세요");
-      console.log(abc)
-    let array = abc.concat({id: 5})
-    console.log(array)
-    array.filter(item => item.id !== 2)
-    console.log(array)
-      
-  }
-  const onClickLeave = () => setMessage("안녕히가세요");
-
   const [color, setColor] = useState("black");
-
+  const onClickEnter = () => setMessage("안녕하세요")
+  const onClickLeave = () => setMessage("안녕히가세요");
+  
   return (
     <>
       <button onClick={onClickEnter}>입장</button>
