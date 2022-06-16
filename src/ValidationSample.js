@@ -42,4 +42,4 @@ class ValidationSample extends Component {
   }
 }
 
-export default ValidationSample
+export default ValidationSample;
