@@ -1,7 +1,7 @@
-import ValidationSample from "./ValidationSample";
+import Counter from "./Counter";
 
 const App = () => {
-  return <ValidationSample />;
+  return <Counter />;
 };
 
 export default App;

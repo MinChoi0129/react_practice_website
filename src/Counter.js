@@ -11,14 +11,14 @@ class Counter extends Component {
       <div>
         <h1 className="react2">증가하는 값 : {number}</h1>
         <h2 className="react2">고정된 값 : {fixed_number}</h2>
-        <button
-          className="react"
-          onClick={() => {
-            this.setState({ number: number + 1 }, () => {console.log("calling setState"); console.log(this.state)});
-          }}
-        >
-          +1
-        </button>
+        <button onClick={() => {
+          this.setState((previousState, props)=>{
+            console.log(previousState);
+            return {
+              number: previousState.number + 1
+            }
+          })
+        }}>+1</button>
       </div>
     );
   }
