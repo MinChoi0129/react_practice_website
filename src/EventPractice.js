@@ -29,6 +29,7 @@ const EventPractice = () => {
   };
 
   const onKeyPress = (e) => {
+    console.log(e)
     if (e.key === "Enter") {
       onClick();
     }
