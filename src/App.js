@@ -1,5 +1,4 @@
 import { Component } from "react";
-
 import LifeCycleSample from "./LifeCycleSample";
 import ErrorBoundary from "./ErrorBoundary";
 
